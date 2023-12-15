@@ -1,27 +1,28 @@
 <script setup>
 //import { RouterLink, RouterView } from 'vue-router'
-
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      
-      <nav>
-        <div> 
-          <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/register">Register</RouterLink>
-        <RouterLink to="/login">Login</RouterLink>
-        <RouterView />
+  <div class="containor">
+    <div class="row">
+      <div class="col-md-12">
+        <header>
+          <div class="wrapper">
+            <nav>
+              <div>
+                <RouterLink to="/">Home</RouterLink>
+                <RouterLink to="/about">About</RouterLink>
+                <RouterLink to="/login">Login</RouterLink>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <div class="content-view">
+          <RouterView />
         </div>
-      </nav>
+      </div>
     </div>
-  </header>
-
- 
-
-
+  </div>
 </template>
 
 <style scoped>
@@ -35,6 +36,10 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+}
+content-view {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 /* nav a.router-link-exact-active {
@@ -62,7 +67,6 @@ nav a:first-of-type {
     padding-right: calc(var(--section-gap) / 2);
   }
 
-
   header .wrapper {
     display: flex;
     place-items: flex-start;
@@ -71,7 +75,7 @@ nav a:first-of-type {
 
   nav {
     text-align: left;
-    margin-left: -1rem;
+    margin-left: 1rem;
     font-size: 1rem;
 
     padding: 1rem 0;
