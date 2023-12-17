@@ -1,4 +1,5 @@
 <script setup>
+import NavBar from '@/components/NavBar.vue';
 var canvas = document.createElement("canvas");
 var width = (canvas.width = window.innerWidth);
 var height = (canvas.height = window.innerHeight * 1.3);
@@ -176,13 +177,7 @@ canvas.onmousemove = function (e) {
     <div class="row">
       <div class="col-md-12">
         <div class="wrapper">
-          <nav>
-            <div>
-              <RouterLink to="/">Home</RouterLink>
-              <RouterLink to="/about">About</RouterLink>
-              <RouterLink to="/login">Login</RouterLink>
-            </div>
-          </nav>
+          <NavBar />
         </div>
         <div class="content-view">
           <RouterView />
@@ -214,10 +209,11 @@ body {
   inset: 0;
 }
 
-nav {
+.wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 60px;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
@@ -225,6 +221,7 @@ nav {
 
 content-view {
   margin-top: 2rem;
+  /* padding-bottom: 10px; */
   text-align: center;
 }
 

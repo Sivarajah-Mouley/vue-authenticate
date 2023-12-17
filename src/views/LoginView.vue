@@ -101,7 +101,7 @@ a{color:inherit;text-decoration:none}
 	width:100%;
 	margin:auto;
 	max-width:525px;
-	min-height:670px;
+	min-height:640px;
 	position:relative;
 
 	/* background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center; */
@@ -142,7 +142,7 @@ a{color:inherit;text-decoration:none}
 .login-form .group .label,
 .login-form .group .button{
 	text-transform:uppercase;
-  color: #6a6a6d;
+  color: #b19a9a;
 }
 .login-html .tab{
 	font-size:22px;
@@ -157,7 +157,7 @@ a{color:inherit;text-decoration:none}
 .login-html .sign-up:checked + .tab{
   color:#ffffff;
   /*  */
-  border-color:#0019f7;
+  border-color:#f70000;
 }
 .login-form{
 	min-height:345px;
@@ -196,7 +196,7 @@ a{color:inherit;text-decoration:none}
   margin-left: 30%;
 }
 .login-form .group .button:hover{
-  background:#1132ee;
+  background:#ee1111;
 }
 .login-form .group label .icon{
 	width:15px;
@@ -230,7 +230,7 @@ a{color:inherit;text-decoration:none}
 	color:#ffffff;
 }
 .login-form .group .check:checked + label .icon{
-	background:#081fee;
+	background:#ee0808;
 }
 .login-form .group .check:checked + label .icon:before{
 	transform:scale(1) rotate(45deg);
